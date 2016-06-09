@@ -8,10 +8,10 @@ set :user                    , 'ubuntu'
 set :application             , 'appname'
 set :deploy_to               , "/home/#{fetch(:user)}/www/#{fetch(:application)}"
 set :scm                     , :git
-set :repo_url                , 'git@github.com:user/reponame.git'
+set :repo_url                , 'git@github.com:Rod1986/appname.git'
 set :branch                  , :master
 set :keep_releases           , 5
-set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/.ssh/id_rsa.pub) }
+set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/Desktop/desafiolatam-alumnos.pem) }
 
 ## Linked Files & Directories (Default None):
 set :linked_files, %w{config/database.yml config/secrets.yml .env}
